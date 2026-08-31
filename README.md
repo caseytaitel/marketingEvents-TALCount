@@ -17,8 +17,7 @@ copy .env.example .env.local
 ```
 
 Set `HUBSPOT_TOKEN` in `.env.local` (HubSpot private app token with CRM read
-on contacts — including `events_attended` — companies — including
-`hs_is_target_account` — and contact–company associations).
+on contacts, companies, deals, lists).
 
 Dependencies: Python 3, `openpyxl`, `requests`, `python-dotenv`.
 
