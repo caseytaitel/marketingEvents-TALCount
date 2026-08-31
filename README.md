@@ -173,33 +173,9 @@ Identity cells (A–C) on event rows: plain Arial 10, no special fill.
 
 ## Caveats
 
-- `hs_is_target_account` is sparsely populated. F measures what is flagged
-  today, not confirmed off-TAL.
 - Corporate-family fragmentation: separate Company records inflate E.
 - After whitespace normalization, remaining mismatches hard-stop (typos,
   punctuation drift, event never tagged in HubSpot).
-- No date filter: a contact tagged for an event counts regardless of when
-  they were tagged.
 - TOTAL attendees are a **union**. Do not expect them to equal the sum of
   per-event attendees.
 
-## Out of scope
-
-- Intro Demos, deals, pipeline, revenue
-- Cold Outreach / list `membershipTimestamp`
-- Writing back to the Marketing Events Registry
-- Category / Sub-category rollups beyond the Channel Partner sheet
-- Creating or backfilling HubSpot `events_attended` tokens
-
-## Verify
-
-1. Spot-check 1–2 events in HubSpot (contact search on `events_attended`): D
-   should match the contact count; E/F should follow Primary Company + TAL.
-2. On each sheet, TOTAL D ≤ sum of that sheet’s per-event D (same for E).
-   Totals are unions, not sums.
-3. A known non-TAL company must not inflate F.
-4. Extra internal spaces in registry G still match; a truly unknown G
-   hard-stops with no output file.
-5. Open the output next to the operator template: sheet names, headers,
-   fills, frozen header, font sizes, G color scale, TOTAL placement (sheet 1:
-   no blank before TOTAL; sheet 2: blank then TOTAL), and `%` formulas.
