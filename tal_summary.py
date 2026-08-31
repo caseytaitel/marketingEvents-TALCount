@@ -242,7 +242,7 @@ def _require_headers(ws: Worksheet) -> None:
     ]
     if mismatches:
         raise SystemExit(
-            "Registry headers do not match SPEC: " + "; ".join(mismatches)
+            "Registry headers do not match expected columns: " + "; ".join(mismatches)
         )
 
 

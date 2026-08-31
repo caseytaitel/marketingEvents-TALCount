@@ -8,6 +8,5 @@ __pycache__/
 .venv/
 venv/
 *.xlsx
-!docs/examples/**
 .DS_Store
 Thumbs.db
