@@ -1,0 +1,13 @@
+.env
+.env.*
+!.env.example
+outputs/**
+!outputs/.gitkeep
+__pycache__/
+*.pyc
+.venv/
+venv/
+*.xlsx
+!docs/examples/**
+.DS_Store
+Thumbs.db
